@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Decore - Wallpapers',
       theme: ThemeData(
+        backgroundColor: Colors.white,
         primarySwatch: Colors.teal,
       ),
       home: const Splash(),
