@@ -17,10 +17,13 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   flutter_riverpod: any
+  # flutter_screenutil: any
+  cross_connectivity: any
   flutter_svg: any
   http: any
   get: any
   lottie: any
+
 
 dev_dependencies:
   flutter_test:

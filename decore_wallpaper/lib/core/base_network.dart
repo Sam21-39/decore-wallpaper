@@ -9,7 +9,7 @@ class BaseHttp {
   static const String API_KEY =
       "563492ad6f91700001000001ecb1c45f8ef346319801ecc7c0b9e7c3";
 
-  static const BASE_URL = "api.pexels.com/v1/";
+  static const BASE_URL = "api.pexels.com";
   static Client getClient() {
     client ??= Client();
     return client as Client;

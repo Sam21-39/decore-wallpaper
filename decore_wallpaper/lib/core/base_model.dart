@@ -26,7 +26,7 @@ class BaseResponse {
         "page": page,
         "per_page": perPage,
         "photos": List<PhotoModel>.from(
-            photos?.map((x) => x.toJson()) as Iterable<dynamic>),
+            photos?.map((x) => x.toJson()) as List<PhotoModel>),
         "total_results": totalResults,
         "next_page": nextPage,
       };

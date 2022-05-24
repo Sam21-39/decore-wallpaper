@@ -1,3 +1,4 @@
+import 'package:decore_wallpaper/design/home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:lottie/lottie.dart';
@@ -12,8 +13,11 @@ class Splash extends StatefulWidget {
 class _SplashState extends State<Splash> {
   @override
   void initState() {
-    Future.delayed(const Duration(milliseconds: 6500))
-        .then((value) => Get.off(() => Container()));
+    Future.delayed(const Duration(milliseconds: 6700)).then((value) => Get.off(
+          () => const Home(),
+          transition: Transition.fadeIn,
+          duration: const Duration(milliseconds: 300),
+        ));
     super.initState();
   }
 
