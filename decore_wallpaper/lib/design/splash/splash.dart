@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
+import 'package:lottie/lottie.dart';
 
 class Splash extends StatefulWidget {
   const Splash({Key? key}) : super(key: key);
@@ -9,19 +11,18 @@ class Splash extends StatefulWidget {
 
 class _SplashState extends State<Splash> {
   @override
+  void initState() {
+    Future.delayed(const Duration(milliseconds: 6500))
+        .then((value) => Get.off(() => Container()));
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).backgroundColor,
-      body: const Center(
-        child: Text(
-          "Decore",
-          style: TextStyle(
-            fontFamily: "Fredoka",
-            fontSize: 24,
-            color: Colors.black,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
+      body: Center(
+        child: Lottie.asset("assets/images/geometry.zip"),
       ),
     );
   }
